@@ -1,0 +1,665 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    background-color: hsl(0, 0%, 81%);
+    display: flex;
+    gap: 2px;
+    padding: 0 100px;
+}
+
+.container {
+    background-color: #f4f6f9;
+    width: 65%;
+    padding: 40px 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-one {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: hsl(240, 98%, 66%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text div {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.logo-text p {
+    font-size: 12px;
+    color: #969393;
+}
+
+.container-two {
+    display: flex;
+    gap: 10px;
+}
+
+.input {
+    background-color: hsl(0, 2%, 87%);
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    padding: 10px 10px;
+    width: 200px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #969393;
+}
+
+.profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    margin-top: 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    width: 230px;
+    padding: 20px;
+}
+
+.card-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 4px solid hsl(0, 0%, 85%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.profile-img::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-top: 4px solid #fa7d73;
+    border-right: 4px solid #fa7d73;
+    border-top-right-radius: 50px;
+    background-color: transparent;
+    top: -4px;
+    right: -4px;
+}
+
+.star {
+    position: absolute;
+    margin-top: 82px;
+    margin-left: 53px;
+    height: 25px;
+    width: 25px;
+}
+
+
+.profile-img div {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fa7d73;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.profile-img div img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-des {
+    font-size: 12px;
+    color: #969393;
+    margin-bottom: 50px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card-icons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 64%, 0.3);
+    border-radius: 25px;
+    padding: 5px;
+    gap: 3px;
+}
+
+.card-icons div svg,
+p {
+    height: 14px;
+    font-size: 12px;
+}
+
+.more-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 400px;
+    gap: 10px;
+}
+
+.card1 {
+    background: linear-gradient(130deg, #e3e2fd, #fed9bd, #ffaa9b, #f6bab1, #fdb4d8);
+    border-radius: 15px;
+    height: 190px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-pri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.task {
+    width: 100px;
+
+}
+
+.card12-con {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.479);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percent {
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.percent p {
+    color: hsl(0, 0%, 35%);
+}
+
+.card2 {
+    background: linear-gradient(420deg, #67d7ee, #c4e4fc, #55b5f7, #aac4f7);
+    border-radius: 10px;
+    height: 190px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card3 {
+    background-color: hsl(0, 3%, 86%);
+    border-radius: 15px;
+    grid-column: 1/span 2;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.active-3 {
+    color: #969393;
+    font-size: 12px;
+
+}
+
+.card3-sec {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.items {
+    display: flex;
+
+}
+
+.item1,
+.item2,
+.item3 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 img {
+    height: 20px;
+}
+
+.item3 img {
+    height: 20px;
+}
+
+.item1 {
+    border: 1px solid white;
+}
+
+.item2 {
+    margin-left: -10px;
+    border-left: 1px solid hsl(0, 0%, 83%);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.item3 {
+    margin-left: -10px;
+    border-left: 1px solid hsl(0, 0%, 83%);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.container-one-last {
+    margin-top: 50px;
+}
+
+.container-one-last-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.focus {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.pro-ana {
+    font-size: 12px;
+    color: #969393;
+}
+
+.range {
+    padding: 10px 12px;
+    border-radius: 25px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sections {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.section1 {
+    position: relative;
+}
+
+.scale {
+    position: absolute;
+    bottom: 8%;
+    left: 35%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.week-8 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.unbalance {
+    color: #969393;
+    font-size: 12px;
+}
+
+.arrow-up {
+    padding: 5px;
+}
+
+.arrow-down {
+    padding: 5px;
+}
+
+.aug,
+.oct,
+.nov {
+    color: #969393;
+    padding: 5px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.sep {
+    background-color: hsl(240, 100%, 50%);
+    padding: 5px;
+    width: fit-content;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.arrow-down {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow-down svg {
+    margin-right: 20px;
+}
+
+.max,
+.min {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.max-col {
+    height: 15px;
+    width: 15px;
+    background-color: hsl(14, 100%, 50%);
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.min-col {
+    height: 15px;
+    width: 15px;
+    background-color: hsl(207, 100%, 50%);
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.arrow-down-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fourty-one {
+    font-size: 100;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.accuracy p {
+    font-size: 12px;
+    color: #969393;
+}
+
+/*Second section*/
+.sub-container {
+    padding: 40px 30px;
+    background-color: hsl(0, 0%, 95.5%);
+    width: 35%;
+}
+
+.meetings-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meetings {
+    font-weight: bold;
+}
+
+.meetings-logo {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-con {
+    margin-top: 40px;
+}
+
+.meeting-days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    border-bottom: 2px solid hsl(0, 2%, 88%);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.days {
+    color: #969393;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.quick {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.zoom-meeting {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.zoom {
+    color: #969393;
+}
+
+.onboarding {
+    margin-left: -14px;
+}
+
+.mb {
+    border-bottom: 0;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #969393;
+    margin-right: -29px;
+}
+
+.areas {
+    margin-top: 80px;
+}
+
+.developed-areas {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.most-common {
+    font-size: 12px;
+    color: #969393;
+    margin-bottom: 30px;
+}
+
+.sports {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.sport-skills {
+    font-weight: bold;
+}
+
+.gray-blue {
+    height: 7px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: hsl(0, 1%, 79%);
+}
+
+.seven-one {
+    height: 7px;
+    width: 121px;
+    border-radius: 25px;
+    background-color: hsl(231, 96%, 45%);
+}
+
+.seventy-one-percent {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.seventy-one {
+    border-right: 2px solid hsl(0, 1%, 65%);
+    padding-right: 7px;
+}
+
+.blogging {
+    height: 7px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: hsl(0, 1%, 79%);
+}
+
+.blogging div {
+    height: 7px;
+    width: 142px;
+    border-radius: 25px;
+    background-color: hsl(231, 96%, 45%);
+}
+
+.blogging-skills {
+    margin-right: 10px;
+}
+
+.leadership {
+    height: 7px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: hsl(0, 1%, 79%);
+}
+
+.leadership div {
+    height: 7px;
+    width: 83px;
+    border-radius: 25px;
+    background-color: hsl(231, 96%, 45%);
+}
+
+.meditation {
+    height: 7px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: hsl(0, 1%, 79%);
+}
+
+.meditation div {
+    height: 7px;
+    width: 106px;
+    border-radius: 25px;
+    background-color: hsl(231, 96%, 45%);
+}
+
+.philosophy {
+    height: 7px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: hsl(0, 1%, 79%);
+}
+
+.philosophy div {
+    height: 7px;
+    width: 129px;
+    border-radius: 25px;
+    background-color: hsl(231, 96%, 45%);
+}
