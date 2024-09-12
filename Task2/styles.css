@@ -84,7 +84,7 @@ body {
 .first-section-header header {
     margin-bottom: 20px;
     transform: translateY(0);
-    animation: header 1.2s ease-in;
+    animation: header 2s ease-in;
 }
 
 @keyframes header {
@@ -117,7 +117,7 @@ body {
     font-size: 14px;
     opacity: 1;
     transform: translateY(0);
-    animation: cont 1.2s ease-in;
+    animation: cont 2s ease-in;
 }
 
 @keyframes cont {
@@ -155,7 +155,7 @@ body {
     gap: 20px;
     opacity: 1;
     transform: translateY(0);
-    animation: download 1.2s ease-in;
+    animation: download 2s ease-in;
 }
 
 @keyframes download {
@@ -227,7 +227,7 @@ body {
     padding: 20px;
     color: black;
     transform: rotate(-10deg) translateY(0);
-    animation: profile1 1.2s ease-in;
+    animation: profile1 2s ease-in;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 50px;
@@ -291,7 +291,7 @@ body {
     padding: 20px;
     color: black;
     transform: rotate(10deg) translateY(0);
-    animation: profile2 1.2s ease-in;
+    animation: profile2 2s ease-in;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 50px;
@@ -385,7 +385,7 @@ body {
     margin-top: -150px;
     z-index: 0;
     transform: translateY(0);
-    animation: pinky 1.2s ease-in;
+    animation: pinky 2s ease-in;
 }
 
 @keyframes pinky {
@@ -406,7 +406,7 @@ body {
     margin-top: -80px;
     z-index: 0;
     transform: translateY(0);
-    animation: bluey 1.2s ease-in;
+    animation: bluey 2s ease-in;
 }
 
 @keyframes bluey {
@@ -1184,7 +1184,7 @@ body {
 
 
 footer {
-    padding: 0 100px 60px 100px;
+    padding: 50px 100px 60px 100px;
     background-color: #1f212c;
     color: white;
 }
