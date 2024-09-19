@@ -1,4 +1,4 @@
-//Defining the scrolling speed
+/*//Defining the scrolling speed
 const scrollSpeed = 2;
 
 //Making an auto scroll function
@@ -22,3 +22,4 @@ function autoScroll() {
 window.onload = () => {
     autoScroll();
 };
+*/
