@@ -16,11 +16,14 @@ body {
     background-color: #d6d6d8;
     padding: 20px 100px 0 100px;
     font-family: 'Mona Sans';
+    overflow-y: hidden;
 
 }
 
 #bg-default {
     background-color: #1f212c;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 #section1 {
@@ -89,24 +92,20 @@ body {
 .find {
     font-size: 50px;
     animation-timeline: view();
-
     animation-name: find;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
 }
 
 @keyframes find {
     0% {
-        opacity: 0;
-        transform: translateY(150px);
+        transform: translateY(40px);
     }
 
     50% {
-        opacity: 0.5;
+        opacity: 0.4;
     }
 
     100% {
-        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -114,24 +113,20 @@ body {
 .way {
     font-size: 50px;
     animation-timeline: view();
-
     animation-name: way;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
 }
 
 @keyframes way {
     0% {
-        opacity: 0;
-        transform: translateY(170px);
+        transform: translateY(70px);
     }
 
     50% {
-        opacity: 0.5;
+        opacity: 0.4;
     }
 
     100% {
-        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -139,24 +134,22 @@ body {
 .your {
     font-size: 50px;
     animation-timeline: view();
-
     animation-name: your;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
 }
 
 @keyframes your {
     0% {
-        opacity: 0;
-        transform: translateY(190px);
+
+        transform: translateY(90px);
     }
 
     50% {
-        opacity: 0.5;
+        opacity: 0.4;
     }
 
     100% {
-        opacity: 1;
+
         transform: translateY(0);
     }
 }
@@ -170,16 +163,18 @@ body {
     font-size: 14px;
     opacity: 1;
     animation-timeline: view();
-
     animation-name: cont;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
 }
 
 @keyframes cont {
     0% {
         opacity: 0;
-        transform: translateY(150px);
+        transform: translateY(100px);
+    }
+
+    50% {
+        opacity: 0.4;
     }
 
     100% {
@@ -211,20 +206,18 @@ body {
     gap: 20px;
     opacity: 1;
     animation-timeline: view();
-
     animation-name: download;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
 }
 
 @keyframes download {
     0% {
         opacity: 0;
-        transform: translateY(170px);
+        transform: translateY(130px);
     }
 
     50% {
-        opacity: 0.3;
+        opacity: 0.4;
     }
 
     100% {
@@ -287,10 +280,8 @@ body {
     color: black;
     transform: rotate(-10deg) translateY(0);
     animation-timeline: view();
-
     animation-name: profile1;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 50px;
@@ -308,7 +299,7 @@ body {
         transform: translateY(250px);
     }
 
-    100% {
+    80% {
         opacity: 1;
         transform: rotate(-10deg) translateY(0);
     }
@@ -355,10 +346,8 @@ body {
     color: black;
     transform: rotate(10deg) translateY(0);
     animation-timeline: view();
-
     animation-name: profile2;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 50px;
@@ -379,7 +368,7 @@ body {
         transform: translateY(150px);
     }
 
-    100% {
+    80% {
         opacity: 1;
         transform: rotate(10deg) translateY(0);
     }
@@ -453,10 +442,8 @@ body {
     z-index: 0;
     transform: translateY(0);
     animation-timeline: view();
-
     animation-name: pinky;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
 }
 
 @keyframes pinky {
@@ -465,7 +452,7 @@ body {
         transform: translateY(40px);
     }
 
-    100% {
+    80% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -478,10 +465,8 @@ body {
     z-index: 0;
     transform: translateY(0);
     animation-timeline: view();
-
     animation-name: bluey;
     animation-fill-mode: both;
-    animation-duration: 0.5s;
 }
 
 @keyframes bluey {
@@ -490,7 +475,7 @@ body {
         transform: translateY(50px);
     }
 
-    100% {
+    80% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -526,7 +511,7 @@ body {
 }
 
 #section3 {
-    padding: 100px 100px 150px 200px;
+    padding: 200px 100px 150px 200px;
     color: white;
     font-size: 12px;
     display: flex;
@@ -540,11 +525,9 @@ body {
 }
 
 .section3-img {
+    animation: fadeOut linear forwards;
     animation-timeline: view();
-
-    animation-name: fadeOut;
-    animation-fill-mode: both;
-    animation-duration: 0.5s;
+    animation-range: cover 40% exit 80%;
 }
 
 .section3-img img {
@@ -562,11 +545,9 @@ body {
     margin-top: 45px;
     color: #98979a;
     font-weight: bold;
+    animation: fadeOut linear forwards;
     animation-timeline: view();
-
-    animation-name: fadeOut;
-    animation-fill-mode: both;
-    animation-duration: 0.5s;
+    animation-range: cover 40% exit 80%;
 }
 
 .section3-profile {
@@ -583,11 +564,9 @@ body {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+    animation: fadeOut linear forwards;
     animation-timeline: view();
-
-    animation-name: fadeOut;
-    animation-fill-mode: both;
-    animation-duration: 0.5s;
+    animation-range: cover 40% exit 80%;
 }
 
 .section3-profile .texts a {
@@ -605,11 +584,9 @@ body {
     top: 0;
     margin-left: 60px;
     margin-top: 260px;
+    animation: fadeOut linear;
     animation-timeline: view();
-
-    animation-name: fadeOut;
-    animation-fill-mode: both;
-    animation-duration: 0.5s;
+    animation-range: cover 40% exit 80%;
 }
 
 .answers-answer {
@@ -627,30 +604,23 @@ body {
     border-radius: 12px;
     animation: popOut ease-in forwards, colorChange ease-in forwards;
     animation-timeline: view();
-
-    animation-fill-mode: both;
-    animation-duration: 1ms;
-
+    animation-range: entry 20% cover 40%;
 }
 
 .second-chat {
     margin-top: -150px;
     animation: popOut2 ease-in forwards, colorChange ease-in forwards;
     animation-timeline: view();
-
-    animation-fill-mode: both;
-    animation-duration: 1ms;
+    animation-range: entry 20% cover 40%;
 }
 
 .third-chat {
-    margin-top: -80px;
+    margin-top: -90px;
     height: 12px;
     overflow-y: hidden;
     animation: popOut3 ease-in forwards, colorChange ease-in forwards;
     animation-timeline: view();
-
-    animation-fill-mode: both;
-    animation-duration: 1ms;
+    animation-range: entry 30% cover 40%;
 }
 
 .fourth-chat {
@@ -658,9 +628,7 @@ body {
     opacity: 0;
     animation: popOut4 ease-in forwards, colorChange ease-in forwards;
     animation-timeline: view();
-
-    animation-fill-mode: both;
-    animation-duration: 1ms;
+    animation-range: entry 30% cover 40%;
 }
 
 
@@ -747,10 +715,6 @@ body {
 
     }
 
-    50% {
-        opacity: 0.5;
-    }
-
     100% {
         opacity: 1;
         transform: translateY(-180%) rotate(-10deg) scale(1);
@@ -799,9 +763,7 @@ body {
 .section3b {
     animation: slideOut ease-in forwards;
     animation-timeline: view();
-
-    animation-fill-mode: both;
-    animation-duration: 1ms;
+    animation-range: cover 30% exit 40%;
 }
 
 @keyframes slideOut {
@@ -847,14 +809,12 @@ body {
 #section3-replace {
     color: white;
     position: absolute;
-    top: 20%;
+    top: 30%;
     right: 22%;
     opacity: 0;
     animation: slideIn ease-in forwards;
     animation-timeline: view();
-
-    animation-fill-mode: both;
-    animation-duration: 1ms;
+    animation-range: entry 80% cover 50%;
 }
 
 @keyframes slideIn {
